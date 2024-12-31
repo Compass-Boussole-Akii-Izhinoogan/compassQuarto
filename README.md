@@ -4,7 +4,7 @@ This repository stores branded Quarto html and pdf templates.
 
 ## Installation
 
-To use the template:
+To use the template in a new project or folder:
 
 1. Create a new project or folder with either RStudio or Positron.
 2. Copy the following command into the Terminal:
@@ -12,6 +12,10 @@ To use the template:
 `quarto use template Compass-Boussole-Akii-Izhinoogan/compassQuarto`
 
 In most cases you don't want to create a subdirectory. Instead, you'll open the index.qmd file and edit that. 
+
+To add the template to an existing project:
+
+`quarto add Compass-Boussole-Akii-Izhinoogan/compassQuarto`
 
 
 ## Customization
