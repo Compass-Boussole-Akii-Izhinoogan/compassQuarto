@@ -1,0 +1,96 @@
+meta: 
+  name:
+    short: Compass
+    full: Compass - Boussole Akii-Izhinoogan
+  link: https://www.compassne.ca/
+
+# colour definitions
+
+color:
+  palette:
+    dark-grey: "#222222"
+    light-grey: "#eef5f2"
+    gray: "#404041"
+    blue: "#286169"
+    orange: "#F16823"
+    yellow: "#FDB816"
+    green: "#BED62F"
+    clgreen: "#DEE48C"
+    clblue: "#8CD3D6"
+    cblue: "#4AB8C1"
+    cdblue: "#286169"
+    navyblue: "#133438"
+
+# colour useage
+
+  background: "#ffffff"
+  foreground: dark-grey
+  primary: light-grey
+  secondary: cdblue
+  tertiary: yellow
+  danger: orange
+  info: clblue
+  warning: yellow
+  dark: navyblue
+  light: blue
+
+logo: 
+  images:
+    icon:
+      path: images/compass-logo.png
+      #path: compass-stacked-logo.png
+      alt: Compass icon.    
+    full:
+      path: images/compass-logo.png
+      alt: Compass logo.
+    stacked:
+          path: images/compass-stacked-logo.png
+          alt: Compass logo.
+    full-reverse:
+      path: images/compass-logo-w.png
+      alt: Compass logo reversed.
+  small:
+    light: icon
+    dark: icon
+  medium:
+    light: full
+    dark: full-reverse
+  large:
+    light: full
+    dark: full-reverse
+
+typography:
+  fonts:
+    - family: Nunito
+      source: google
+      style: normal
+      weight: [200, 400]
+    - family: Ubuntu
+      source: google
+      weight: bold
+    - family: Fira Code
+      source: google
+    - family: Open Sans
+      source: google
+  link: 
+    color: "#4AB8C1"
+    weight: bold
+  base: 
+    family: Open Sans
+    line-height: 1.4
+    size: 1rem
+  headings: 
+    family: Nunito
+    line-height: 2
+    color: navyblue
+    weight: 400
+  monospace: Fira Code
+
+defaults:
+  bootstrap:
+    defaults: # defaults also supports a string as its value
+      link-decoration: underline
+
+
+
+  # https://posit-dev.github.io/brand-yml/brand/typography.html <--

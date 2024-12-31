@@ -1,0 +1,53 @@
+---
+title: "Title Goes Here"
+subtitle: Subtitle Goes Here
+author: Office of System Performance
+date: last-modified
+warning: false
+message: false
+#echo: false <-- unhash to hide code chunks across the entire document
+---
+
+# First level heading
+
+-   To customize Quarto functioning specific to this document (e.g., navbar versus sidebar; toc controls etc.), see **\_quarto.yml**
+
+-   To customize typography and other brand elements modify the **\_brand.yml**
+
+-   To customize the Typst (pdf) layout see **\_extensions\\typst-template.typ**
+
+-   To create custom divs or modify css/scss see **theme.scss**
+
+## Second level heading
+
+::: callout-note
+This is a call-out
+:::
+
+::: callout-warning
+This is another 
+::: 
+
+
+::: confidential
+CONFIDENTIAL \| NOT FOR DISTRIBUTION
+:::
+
+::: panel-tabset 
+## Tab 1
+
+Content goes here.
+
+## Tab 2
+
+
+```{r}
+# to hide code use #| echo: false in the code chunk or unhash echo: false in the YAML above.
+library(tidyverse)
+library(ggplot2)
+
+iris |>
+    ggplot(aes(x=Species, y=Petal.Length, fill=Species)) +
+    geom_col()
+```
+:::
