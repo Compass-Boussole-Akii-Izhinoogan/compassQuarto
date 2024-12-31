@@ -1,2 +1,1 @@
-# Risk-Mitigation-Manual
-# compassQuarto
+This is a branded template for Compass HTML and pdf documents.
