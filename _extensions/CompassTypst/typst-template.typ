@@ -127,3 +127,8 @@
   )
 }
 
+#set table(
+  inset: 6pt,
+  stroke: none
+)
+
