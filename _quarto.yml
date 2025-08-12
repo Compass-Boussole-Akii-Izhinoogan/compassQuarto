@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs
-
 website:
   reader-mode: false
 # unhash this code if you would prefer a branded top nav bar
@@ -13,28 +12,23 @@ website:
     left: "Copyright 2024, Compass" 
     right:
     - icon: compass-logo.png
-# Unhash this code if you would prefer a branded sidebar 
-  # sidebar:
-  #   logo: images/compass-stacked-logo.png
-  #   search: true
-  #   docked: true
-
 format: 
     html:
         theme: [cosmo, theme.scss, brand]
-        lightbox: true
+        html-table-processing: none
+       # lightbox: true
         thumbnails: false
         toc: true
         toc-depth: 3
         toc-expand: true
-        number-sections: true
+        number-sections: false
     CompassTypst-typst: default
 typst-logo: 
   path: "images/compass-logo.png"
-format-links:
-    - html
-    - format: CompassTypst-typst
-      text: PDF
+# format-links:
+#     - html
+#     - format: CompassTypst-typst
+#       text: PDF
 
 
 

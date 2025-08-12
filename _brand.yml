@@ -70,13 +70,21 @@ typography:
       weight: bold
     - family: Fira Code
       source: google
+    - family: Fira Mono
+      source: google
     - family: Open Sans
+      source: google
+    - family: Libre Franklin
+      source: google
+    - family: Chivo
+      source: google
+    - family: Fira Sans
       source: google
   link: 
     color: "#4AB8C1"
     weight: bold
   base: 
-    family: Open Sans
+    family: Nunito #Libre Franklin
     line-height: 1.4
     size: 1rem
   headings: 

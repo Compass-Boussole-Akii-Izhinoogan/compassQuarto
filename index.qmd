@@ -5,9 +5,17 @@ author: Office of System Performance
 date: last-modified
 warning: false
 message: false
-#echo: false <-- unhash to hide code chunks across the entire document
+echo: false  # <-- unhash to hide code chunks across the entire document
 ---
 
+```{r}
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(gt)
+library(gtExtras)
+source('utilities.R')
+```
 # First level heading
 
 -   To customize Quarto functioning specific to this document (e.g., navbar versus sidebar; toc controls etc.), see **\_quarto.yml**
@@ -20,6 +28,12 @@ message: false
 
 ## Second level heading
 
+```{r}
+cars |> 
+   # summarise(n = n())|>
+    gt() |> 
+    gt_theme_538()
+```
 ::: callout-note
 This is a call-out
 :::
@@ -40,14 +54,3 @@ Content goes here.
 
 ## Tab 2
 
-
-```{r}
-# to hide code use #| echo: false in the code chunk or unhash echo: false in the YAML above.
-library(tidyverse)
-library(ggplot2)
-
-iris |>
-    ggplot(aes(x=Species, y=Petal.Length, fill=Species)) +
-    geom_col()
-```
-:::

@@ -46,7 +46,7 @@
 
   // Font size and others
   
-  set text(font: "Nunito", 12pt, weight: 500)
+  set text(font: "Nunito", 11pt, weight: 400)
   
   title_font_size = int(title_font_size) * 1pt
 
@@ -81,9 +81,9 @@
 // COnfigure lvl-1 indent of bulleted list
   set list(indent: 1em)
 // Configure numbering of headings.
-  set heading(numbering: "1.")
+ // set heading(numbering: "1.")
   
-  show heading: set text(font: "Nunito", 20pt, weight: 800)
+  show heading: set text(font: "Nunito", 20pt, weight: 600)
   show heading.where(level: 1): set text(1.1em)
   // show heading.where(level: 1): underline
   show heading.where(level: 1): set par(leading: 0.4em)
